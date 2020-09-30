@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domevent">
+    <title>Domevent</title>
+</head>
+
+<body>
+
+    <div class="modalMenu">
+        <span class="material-icons closeIcon" onclick="hideModal()">close</span>
+        <a href="#home" onclick="hideModal()">HOME</a>
+        <a href="#about" onclick="hideModal()">ABOUT</a>
+        <a href="#contact" onclick="hideModal()">CONTACT</a>
+        <a href="#gallery" onclick="hideModal()">GALLERY</a>
+
+    </div>
+
+    <nav class="navbar">
+
+        <h3 class="brand">NavalPedia</h3>
+
+        <span class="material-icons menuIcons" onclick="showModal()">menu</span>
+
+
+    </nav>
+
+    <main class="container">
+        <section class="home" id="home">
+
+            <img src="./1.jpg" alt="" class="heroImage">
+
+            <h1 class="heroText">
+                <span style="color: rgb(0, 26, 255);">WEB</span>
+                PROFILE <br /> <span style="font-size: 12rem;">MIDHAT</span>
+
+            </h1>
+
+
+
+
+
+        </section>
+        <section class="about" id="about">
+
+            <div class="aboutAlert">
+                Selamat datang di web sederhana saya ini
+                <span class="material-icons alertClose" onclick="hideaboutAlert()"> close </span>
+            </div>
+
+            about
+
+        </section>
+        <section class="contact" id="contact">contact</section>
+        <section class="gallery" id="gallery">
+
+            <span class="material-icons galIcon">
+                motion_photos_paused
+            </span>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="left">
+            <h3> site map </h3>
+            <a href="#home"> home </a>
+            <a href="#about"> about </a>
+            <a href="#contact"> contact </a>
+            <a href="#gallery"> gallery </a>
+        </div>
+
+        <div class="right">
+
+            <div class="col1">
+
+                <div class="formGroup">
+                    <label for="name">Nama</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="formGroup">
+                    <label for="phone">wa Number</label>
+                    <input type="phone" name="phone" id="phone">
+                </div>
+
+                <div class="formGroup">
+                    <label for="email">Pesan</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+            </div>
+
+            <div class="col2">
+                <div class="formGroup">
+                    <label for="message">email</label>
+                    <textarea type="message" name="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formGroup">
+                    <button class="kirim">
+                        kirim pesan
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
